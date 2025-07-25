@@ -1,5 +1,5 @@
 const assert = require('assert');
-const fetch = (...args) => import('node-fetch').then(mod => mod.default(...args));
+const fetch = require('node-fetch');
 
 suite('View Students page', function() {
   test('Page title', async function() {
